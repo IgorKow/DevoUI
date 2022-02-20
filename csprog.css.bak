@@ -1,0 +1,160 @@
+/* создать сам блок сверху */
+.topnav {
+    background-color: #f8f5f2; /*цвет фона блока сверху*/
+    overflow: hidden;       /*блок*/
+
+}
+
+
+/* стиль ссылок внутри навигации сверху*/
+.topnav a {
+    float: right;
+    color: black;         /*цвет сыллок сверху*/
+    background-color: #de8704;
+    text-align: center;
+    padding: 39px 30px;     /*высота блока и расстояние межу ссылками*/
+    text-decoration: none;
+    font-size: 21px;        /*размер шрифта ссылок*/
+}
+
+
+/* цвет ссылок при наведении курсора */
+.topnav a:hover {
+    background-color: #61a239; /*цвет блока*/
+    color: black;           /*цвет самих букв*/
+}
+
+
+
+
+.block {
+    background-color: #f8f5f2;
+    width: 100%;
+    height: 1560px;
+}
+
+
+
+
+.aligncenter {              /*картинка по центру*/
+    text-align: center;
+}
+
+
+
+
+.wrapper {
+        width: 29%;
+        height: 900px;
+        border: 0px solid #515151;
+        float: left;
+        margin:0 2%;
+        background-color: #ffffff;
+      }
+.exmpl {
+    overflow: hidden;
+    }
+.exmpl img {
+    width: 100%;
+}
+
+.block2 {
+    background-color: #f8f5f2;
+    width: 100%;
+    height: 800px;
+}
+
+
+.wrapper2 {
+        width: 21%;
+        height: 300px;
+        border: 0px solid #515151;
+        float: left;
+        margin: 0px;
+        background-color: #f8f5f2;
+      }
+.exmpl2 {
+    overflow: hidden;
+    }
+
+
+
+.link a {
+text-decoration:none; /*Убираем стандартное подчёркивание ссылки если оно ещё не убрано*/
+display: inline-block; /*делаем чтобы наша ссылка из строчного элемента превратилась в строчно-блочный*/
+line-height: 1; /*Задаём высоту строки (можно в пикселях)*/
+color:black;/*Задаём цвет ссылки*/
+}
+
+.link a:after {
+display: block; /*превращаем его в блочный элемент*/
+content: ""; /*контента в данном блоке не будет поэтому в кавычках ничего не ставим*/
+height: 3px; /*задаём высоту линии*/
+width: 0%; /*задаём начальную ширину элемента (линии)*/
+background-color: #225384; /*цвет фона элемента*/
+transition: width 0.4s ease-in-out; /*данное свойство отвечает за плавное изменение ширины. Здесь можно задать время анимации в секундах (в данном случае задано 0.4 секунды)*/
+}
+
+.link a:hover:after,
+.link a:focus:after {
+width: 100%;
+}
+
+.link a:hover{
+color:#225384;
+}
+
+
+
+
+
+/*******************************************************/
+/* Dropdown Button */
+.dropbtn {
+    background-color: #61a239;;
+   padding: 40px 30px;
+	text-align: center;
+    font-size: 19px;
+    border: none;
+	text-decoration: none;
+
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+   
+	 background-color: #61a239;;
+	 float:right;
+	 padding: 0px 0px;
+	 text-decoration: none;
+	
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #61a239;
+    min-width: 100px;
+	text-decoration: none;
+  
+   
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #61a239;}
